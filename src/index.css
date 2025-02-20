@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+#id {
+    background-size: cover;
+    background-image: url("https://travel-tomsk.ru/img/list-1495783418.jpg");
+    background-position: top;
+    width: 100%;
+    height: 60vh;
+}
+#inject {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60%;
+    left: 0;
+    z-index: 20;
+
+    background-color: rgba(74, 74, 74, 0.36);
+}
+#animate {
+    animation: animato 700ms ease-in-out infinite;
+}
+@keyframes animato {
+    0% {
+        transform: translateY(10px);
+    }
+    70% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
