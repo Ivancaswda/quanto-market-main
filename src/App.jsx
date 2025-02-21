@@ -85,7 +85,7 @@ function App() {
                  className='w-full h-80 text-center flex flex-col items-center justify-center '>
                 <img className='w-20 rounded-full'
                      src='https://pic.rutubelist.ru/user/c7/4a/c74af2bde05d669270019bc350a4252c.jpg' alt=""/>
-                <h1 className='font-semibold text-3xl mt-10 text-gray-400 '>К сожалению на данный момент <span
+                <h1 className='font-semibold text-3xl mt-10 text-gray-200 '>К сожалению на данный момент <span
                     className='text-blue-600'>quantShop</span> недоступен в вашем текущем <span
                     className='text-green-400'>регионе</span></h1>
             </div>
@@ -103,9 +103,10 @@ function App() {
         <div className='flex items-center justify-center flex-col gap-10 mt-[100px] mb-20'>
 
             <h1 className='text-2xl '>Почему так?</h1>
-            <div className='  flex justify-center gap-10  '>
-                <div className='border border-blue-500  flex-col items-center justify-center flex gap-4 px-4 py-6 rounded-lg duration-200 cursor-pointer transition-all hover:scale-105'
-                     >
+            <div className=' block sm:flex justify-center gap-10  '>
+                <div
+                    className='border border-blue-500  flex-col items-center justify-center flex gap-4 px-4 py-6 rounded-lg duration-200 cursor-pointer transition-all hover:scale-105'
+                >
                     <svg width='30' height='30' xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 512 512">
                         <path
@@ -115,7 +116,7 @@ function App() {
                 </div>
                 <div
                     className='border border-blue-500 flex-col items-center justify-center flex gap-4 px-4 py-6 rounded-lg duration-200 cursor-pointer transition-all hover:scale-105'
-                   >
+                >
                     <svg width='30' height='30' xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 640 512">
                         <path
@@ -165,15 +166,15 @@ function App() {
                         <Route path='/cart' element={<Cart/>}/>
                         <Route path='/contact' element={<Contact/>}/>
                         <Route path='/place-order' element={<PlaceOrder/>}/>
-                    <Route path='/orders' element={<Orders/>}/>
-                    <Route path='/profile' element={<Profile/>}/>
+                        <Route path='/orders' element={<Orders/>}/>
+                        <Route path='/profile' element={<Profile/>}/>
 
-                </Routes>
+                    </Routes>
 
+                </div>
+                <Footer className='mt-8'/>
             </div>
-            <Footer className='mt-8'/>
-        </div>
-    ))
+        ))
     )
 }
 
