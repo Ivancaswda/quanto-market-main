@@ -136,6 +136,26 @@ const Product = () => {
 
                 {/* ----------------Product intel----------- */}
                 <div className='flex-1'>
+
+                      <button
+                            className="relative  text-white font-semibold py-0.3  px-2 rounded-3xl bg-green-500 border-[3px] border-transparent overflow-hidden">
+                            <span className="z-10 relative text-sm text-center bottom-0.5">{productData.category}</span>
+
+                            <div
+                                className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-400 via-green-400 to-violet-400 animate-border"></div>
+
+                            <div className="absolute inset-0 flex items-center justify-center dots"></div>
+                        </button>
+                        <button
+                            className="relative  text-white font-semibold py-0.3  px-2 rounded-3xl bg-red-500 border-[3px] border-transparent overflow-hidden">
+                            <span className="z-10 relative text-sm text-center bottom-0.5">{productData.subCategory}</span>
+
+                            <div
+                                className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 animate-border"></div>
+
+                            <div className="absolute inset-0 flex items-center justify-center dots"></div>
+                        </button>
+                    
                     <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
                     <div className='flex items-center gap-1 mt-2'>
                         <svg width='10px' xmlns="http://www.w3.org/2000/svg"
