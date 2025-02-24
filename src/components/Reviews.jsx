@@ -53,9 +53,12 @@ const Reviews = ({getReviewData, reviews}) => {
                                     }}
                                     key={index}
                                 >
-                                    <div className='flex items-center gap-2'>
-                                        <img src={assets.user} className='w-6' alt=""/>
-                                        <p><strong className='text-sm'>{review.author}</strong></p>
+                                     <div className='flex items-start justify-between'>
+                                        <div className='flex items-center gap-2'>
+                                            <img src={assets.user} className='w-6' alt=""/>
+                                            <p><strong className='text-sm'>{review.author}</strong></p>
+                                        </div>
+                                        <p className='text-[12px] text-gray-600'>{new Date(review.createdAt).toLocaleDateString()}</p>
                                     </div>
                                     <p className='text-sm text-gray-700'>{review.content}</p>
                                 </li>
