@@ -57,7 +57,7 @@ const Product = () => {
 
             setRelatedProducts(productsCopy)
         }
-    }, [products])
+    }, [products, productData])
     console.log(relatedProducts)
   //  const {handleReviewAdded, reviews} = useContext(ShopContext)
 
